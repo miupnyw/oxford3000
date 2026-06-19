@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Oxford 3000 — คลังคำศัพท์</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,900;1,9..144,500&family=Sarabun:wght@300;400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body class="hide-answer">
+<header>
+  <div class="kicker">The Oxford 3000™ · American English</div>
+  <h1>คลังคำศัพท์ <span class="three">3000</span></h1>
+  <div class="sub">3,000 คำสำคัญ จาก A1 ถึง B2 · พร้อมคำอ่านและคำแปลภาษาไทย</div>
+  <div class="stats">
+    <span class="pill"><b id="totWord">0</b> คำ</span>
+    <span class="pill"><b id="totCat">0</b> หมวด</span>
+    <span class="pill">A1 · A2 · B1 · B2</span>
+  </div>
+</header>
+
+<div class="controls">
+  <div class="controls-inner">
+    <div class="search">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg>
+      <input id="q" type="text" placeholder="ค้นหา… คำอังกฤษ / คำอ่าน / คำแปล">
+    </div>
+    <div class="lvlgroup" id="lvls">
+      <button data-l="all" class="on">ทั้งหมด</button>
+      <button data-l="A1">A1</button>
+      <button data-l="A2">A2</button>
+      <button data-l="B1">B1</button>
+      <button data-l="B2">B2</button>
+    </div>
+    <select id="cat"><option value="all">ทุกหมวด</option></select>
+    <button class="toggle" id="quiz">โหมดทบทวน</button>
+  </div>
+</div>
+
+<main>
+  <div class="countline">แสดง <b id="shown">0</b> คำ</div>
+  <div id="list"></div>
+  <div class="empty" id="empty" style="display:none">ไม่พบคำที่ค้นหา</div>
+</main>
+
+<footer>Oxford 3000™ © Oxford University Press · คำแปลและคำอ่านภาษาไทยโดยเพจ KruDew TOEIC · แตะการ์ดเพื่อพลิกดูคำตอบในโหมดทบทวน</footer>
+<button class="totop" id="totop" aria-label="กลับขึ้นบน">↑</button>
+
+<script src="script.js"></script>
+</body>
