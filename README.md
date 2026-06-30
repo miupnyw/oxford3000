@@ -4,7 +4,7 @@ A single-page vocabulary browser for **The Oxford 3000™** word list, with Thai
 pronunciations and translations. Browse all 3,000 A1–B2 words, filter by CEFR
 level or category, search in English / phonetics / Thai, and flip cards in a
 review mode to quiz yourself.
-🔗 Live Demo: oxford3000-rho.vercel.app
+🔗 Live Demo: [oxford3000-rho.vercel.app](https://oxford3000-rho.vercel.app)
 
 ## Features
 
